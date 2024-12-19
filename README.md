@@ -41,8 +41,8 @@ Follow these steps to set up and run the project:
 
 ### **2. Clone the Repository**
 ```bash
-git clone <repository_url>
-cd <repository_directory>
+git clone [<repository_url>](https://github.com/YuvalSabag/Tavily_LLM_Agent)
+cd Tavily_LLM_Agent
 ```
 ### **3. Install Dependencies**
 Create and activate a virtual environment, then install the required packages:
