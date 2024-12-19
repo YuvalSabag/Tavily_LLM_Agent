@@ -49,10 +49,6 @@ def process_query(query, tavily_api, openai_node):
                 "Try rephrasing your query or being more specific."
             )
         }
-        # return {
-        #     "search_results": search_results,
-        #     "error": "No valid content found for response generation. Refine your query and try again."
-        # }
 
     logging.info("Generating response with OpenAI...")
     gpt_response = generate_response(openai_node, context, query)
@@ -65,10 +61,6 @@ def process_query(query, tavily_api, openai_node):
                 "Please verify your API key or try again later. You might also refine your query for better results."
             )
         }
-        # return {
-        #     "search_results": search_results,
-        #     "error": "Failed to generate response from OpenAI. Verify the query or try again later."
-        # }
 
     logging.info("Workflow completed successfully.")
     return {"search_results": search_results, "gpt_response": gpt_response}
